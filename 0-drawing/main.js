@@ -1,9 +1,10 @@
-d3.select('#vis')
+let svg = d3.select('#vis')
   .append('svg')
     .attr('width', 600)
     .attr('height', 400)
-    .style('background', '#e1f7fa')
-  .append('circle')
+    .style('background', '#e1f7fa');
+    
+svg.append('circle')
     .attr('cx', 100)
     .attr('cy', 300)
     .attr('r', 100)
